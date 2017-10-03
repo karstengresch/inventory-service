@@ -97,6 +97,13 @@
           </plugin>
         </plugins>
       </build>
+      <dependencies>
+        <dependency>
+          <groupId>org.postgresql</groupId>
+          <artifactId>postgresql</artifactId>
+          <version>${version.postgresql}</version>
+        </dependency>
+      </dependencies>
     </profile>
   </profiles>
 </project>

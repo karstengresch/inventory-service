@@ -6,7 +6,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
-        <sourceRoots />
       </configuration>
     </facet>
     <facet type="javaeeApplication" name="javaEEApplication">
@@ -40,5 +39,6 @@
     <orderEntry type="library" name="Arquillian JUnit:Release" level="project" />
     <orderEntry type="library" name="Arquillian TestNG:Release" level="project" />
     <orderEntry type="library" name="JPA 2.0-2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.postgresql:postgresql:9.4.1207" level="project" />
   </component>
 </module>
