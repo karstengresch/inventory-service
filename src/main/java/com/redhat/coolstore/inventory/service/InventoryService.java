@@ -16,7 +16,7 @@ public class InventoryService
   EntityManager entityManager;
 
   public Inventory getInventory(String itemId) {
-    Inventory inventory = (Inventory) entityManager.find(Inventory.class, itemId);
+    Inventory inventory = entityManager.find(Inventory.class, itemId);
     return  inventory;
   }
 
