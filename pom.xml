@@ -24,6 +24,10 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>org.wildfly.swarm</groupId>
+        <artifactId>jpa</artifactId>
+      </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
