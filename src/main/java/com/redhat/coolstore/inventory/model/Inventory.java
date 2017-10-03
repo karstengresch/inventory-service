@@ -1,4 +1,4 @@
-package main.com.redhat.coolstore.inventory.model;
+package com.redhat.coolstore.inventory.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
