@@ -1,8 +1,8 @@
 package com.redhat.coolstore.inventory.service;
 
 import com.redhat.coolstore.inventory.model.Inventory;
-import org.jboss.arquillian.core.api.annotation.ApplicationScoped;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -15,8 +15,11 @@ public class InventoryService
   @PersistenceContext(name = "primary")
   EntityManager entityManager;
 
+
+
   public Inventory getInventory(String itemId) {
     Inventory inventory = entityManager.find(Inventory.class, itemId);
+    System.out.println("***** Got inventory: " + inventory.getItemId());
     return  inventory;
   }
 

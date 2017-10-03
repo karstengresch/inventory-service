@@ -26,6 +26,28 @@ public class Inventory
   @Column(name="LINK")
   private String link;
 
+  public String getItemId()
+  {
+    return itemId;
+  }
 
+  public String getLocation()
+  {
+    return location;
+  }
 
+  public Integer getQuantity()
+  {
+    return quantity;
+  }
+
+  public String getLink()
+  {
+    return link;
+  }
+
+  @Override public String toString()
+  {
+    return getItemId() + " - " + getLink() + " - " + getLocation();
+  }
 }
