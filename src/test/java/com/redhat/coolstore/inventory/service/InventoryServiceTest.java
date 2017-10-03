@@ -41,7 +41,7 @@ public class InventoryServiceTest
   }
 
   @Test
-  public void should_return_inventory () {
+  public void shouldReturnInventoryViaJpa() {
     String itemId = "123456";
     String link = "link";
     String location = "location";
