@@ -9,8 +9,7 @@ import javax.ws.rs.*;
 /**
  * Created by Karsten Gresch on 03.10.17.
  */
-@Path("/inventory"
-)
+@Path("/inventory")
 public class InventoryResource
 {
 

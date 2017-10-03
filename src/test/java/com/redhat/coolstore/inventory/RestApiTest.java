@@ -56,13 +56,25 @@ public class RestApiTest
     WebTarget webTarget = restClient.target("http://localhost:8080").path("/inventory").path("/123456");
     Response response = webTarget.request(MediaType.APPLICATION_JSON_TYPE).get();
     JsonObject responseJsonObject = Json.parse(response.readEntity(String.class)).asObject();
-    // System.out.println(responseJsonObject.asObject().get("itemId"));
+
     Assert.assertEquals(responseJsonObject.get("itemId").asString(), itemId);
     Assert.assertEquals(responseJsonObject.get("link").asString(), link);
     Assert.assertEquals(responseJsonObject.get("location").asString(), location);
     Assert.assertEquals((Integer.valueOf(responseJsonObject.get("quantity").asInt())), quantity);
   }
 
+
+  @Test
+  @RunAsClient
+  public void shouldReturnHealthInformation() {
+
+    Client restClient = ClientBuilder.newClient();
+    WebTarget webTarget = restClient.target("http://localhost:8080").path("/status");
+    Response response = webTarget.request(MediaType.APPLICATION_JSON_TYPE).get();
+    JsonObject responseJsonObject = Json.parse(response.readEntity(String.class)).asObject();
+
+    Assert.assertNotNull(responseJsonObject);
+  }
 
 
 }
