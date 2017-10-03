@@ -14,6 +14,7 @@
     <version.h2>1.4.187</version.h2>
     <version.postgresql>9.4.1207</version.postgresql>
     <version.fabric8-maven-plugin>3.5.25</version.fabric8-maven-plugin>
+    <swarm.project.stage.file>/Users/karsten/tmp/RH/microsrvc/lab1/project-defaults.yml</swarm.project.stage.file>
   </properties>
   <dependencyManagement>
     <dependencies>
